@@ -78,70 +78,11 @@
 
 }
 
-@media screen and (max-width: 960px){
-    .navbar__container{
-        display: flex;
-        justify-content: space-around;
-        height: 80px;
-        z-index: 1;
-        width: 100%;
-        max-width: 1300px;
-        padding: 0;
 
-    }
-    
-    .navbar__menu{
-        display: grid;
-        grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        top: -1000px;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: -1;
-        background: rgb(255, 196, 68);
-    }
-
-    .navbar__menu.active{
-        background: rgb(255, 196, 68);
-        top: 100;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 99;
-        height: 60vh;
-        font-size: 1.6rem;
-    }
-
-    #navbar__logo{
-        padding-left: 25px;
-
-    }
-
-    .navbar__toggle.bar{
-        width: 25px;
-        height: 3px;
-        margin-top: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: rgb(255, 196, 68);
-
-    }
-
-    .navbar__items{
-        width: 100%;
-    }
-
-    .navbar__links{
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-        
-    }
-}
 
 .hero{
     background: black;
+    width: auto;
     padding: 30px;
 }
 
@@ -173,6 +114,7 @@
 
 .main{
     background:black;
+    width: auto;
     padding: 20px;
 }
 
@@ -214,6 +156,7 @@
 
 .connect{
     background:black;
+    width: auto;
     padding: 50px;
 }
 
@@ -236,6 +179,7 @@
 
 .buttom{
     background: black;
+    width: auto;
     padding: 50px;
 }
 
@@ -256,9 +200,9 @@
     font-family: 'Helsinki';
 }
 
-main__games_showcase {
+.main__games_showcase {
     display: flex;
-    flex-direction: row; 
+    flex-direction: column; 
     gap: 20px; 
 }
 
@@ -331,7 +275,7 @@ main__games_showcase {
 
 .cuddle__nightmares__screenshots{
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 200px; 
     gap: 10px; 
     padding: 10px;
@@ -370,4 +314,129 @@ button {
 button:hover {
     background-color: rgb(255, 196, 68);
     transition: all 0.3s ease
+}
+
+@media screen and (max-width: 600px){
+    .navbar__container{
+        display: flex;
+        justify-content: space-around;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+
+    }
+    
+    .navbar__menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: -1;
+        background: rgb(255, 196, 68);
+    }
+
+    .navbar__menu.active{
+        background: rgb(255, 196, 68);
+        top: 100;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 60vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar__logo{
+        padding-left: 25px;
+
+    }
+
+    .navbar__toggle.bar{
+        width: 25px;
+        height: 3px;
+        margin-top: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: rgb(255, 196, 68);
+
+    }
+
+    .navbar__items{
+        width: 100%;
+    }
+
+    .navbar__links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        
+    }
+
+    .hero{
+        background: black;
+
+    }
+
+    .main{
+        background:black;
+        
+    }
+
+    .game img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    
+    .gumball__mayhem__screenshots{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-auto-rows: 200px; 
+        grid-auto-columns: 50px;
+        gap: 10px; 
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .devil__shark__screenshots{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-auto-rows: 200px; 
+        grid-auto-columns: 50px;
+        gap: 10px; 
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .cuddle__nightmares__screenshots{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-auto-rows: 200px; 
+        gap: 10px; 
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .connect{
+        background:black;
+
+    }
+
+    .buttom{
+        background: black;
+ 
+    }
+
+    
 }
